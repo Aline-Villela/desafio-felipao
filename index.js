@@ -28,11 +28,11 @@ switch (true) {
       break; 
       case xpDoHeroi >= 10001: 
     console.log("classificação do herói é Radiante"); 
-     
-    console.log(xpDoHeroi + nomeDoHeroi)
+    break;
+
 }
-
-
+    
+    console.log( "o herói " + nomeDoHeroi  +  " está no nivel "  +  xpDoHeroi )
 
 
 
