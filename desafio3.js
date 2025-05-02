@@ -18,14 +18,28 @@ class HeroiDessaAventura{
      let novoBatalhador = new HeroiDessaAventura("Oogway" , "150", "monge", "artes marciais");
      let novoDesafiante = new HeroiDessaAventura("Kurenai" , "27", "ninja", "shuriken");
 
-     switch(novoHeroi.nomeHeroi, novoComabatente.nomeHeroi, novoBatalhador.nomeHeroi, novoDesafiante.nomeHeroi){
-        case "Hercules":
-            console.log(`O ${this.tipoDoHeroi} atacou usando ${this.ataqueDoHeroi}.`);
-        case "Merlin":
-            console.log(`O ${this.tipoDoHeroi} atacou usando ${this.ataqueDoHeroi}.`);
-        case "Oogway":
-            console.log(`O ${this.tipoDoHeroi} atacou usando ${this.ataqueDoHeroi}.`);
-        case "Kurenai":
-            console.log(`O ${this.tipoDoHeroi} atacou usando ${this.ataqueDoHeroi}.`);
-     }
+       
+let listaDeHerois = [novoHeroi, novoComabatente, novoBatalhador, novoDesafiante];
 
+
+for (let i = 0; i < 4; i++) {
+
+    console.log(`i: ${i}`);
+
+    let heroi = listaDeHerois[i];
+
+    switch (heroi.nomeHeroi) {
+        case "Hercules":
+            console.log(`O ${heroi.tipoDoHeroi} atacou usando ${heroi.ataqueDoHeroi}.`);
+            break;
+        case "Merlin":
+            console.log(`O ${heroi.tipoDoHeroi} atacou usando ${heroi.ataqueDoHeroi}.`);
+            break;
+        case "Oogway":
+            console.log(`O ${heroi.tipoDoHeroi} atacou usando ${heroi.ataqueDoHeroi}.`);
+            break;
+        case "Kurenai":
+            console.log(`O ${heroi.tipoDoHeroi} atacou usando ${heroi.ataqueDoHeroi}.`);
+            break;
+    }
+}
